@@ -1,0 +1,66 @@
+/* Modern Clean Design */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f0f2f5;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 2rem auto;
+    max-width: 400px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cell:hover {
+    background: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.status {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+#reset {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#reset:hover {
+    background: #0056b3;
+}
